@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <h2>Note: You must gesture infront of the camera with your hands to play. The model will then say what it looks like to it. If it is right, hit play. Else make sure your gesture is clearly visible in the camera.</h2>
+    <video id="video" width="250" height="250" autoplay></video>
+    <div id="gesture">Waiting...</div>
+    <div id="gameInfo">For better results try to avoid having anything other than your hands in front of the camera. Your face included. Else it might confuse the model.</div>
+    <div id="gameResult"></div>
+    <button id="startButton">Play</button>
+    <script src="./script.js"></script>
+</body>
+</html>
